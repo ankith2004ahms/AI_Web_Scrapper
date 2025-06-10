@@ -7,6 +7,8 @@ def scrape_website(website):
     print("Launching chrome browser...")
 
     chrome_driver_path = "./chromedriver.exe"
+    print(f"ChromeDriver Path: {chrome_driver_path}")
+
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
 
